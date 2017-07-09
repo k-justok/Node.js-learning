@@ -1,3 +1,15 @@
+---
+title: koa入门 # 这是标题
+categories:  # 这里写的分类会自动汇集到 categories 页面上，分类可以多级
+- 代码学习 # 一级分类
+- Node.js学习 # 二级分类 
+tags:   # 这里写的标签会自动汇集到 tags 页面上
+- 代码学习 # 可配置多个标签，注意格式
+- Node.js学习
+---
+
+
+
 # koa入门
 ## 安装koa包
 按照廖老师所给的第二种方法，利用配置package.json的方法来安装相应的包。
@@ -18,7 +30,9 @@
 原因是koa把很多async函数组成一个处理链，每个async函数都可以做一些自己的事情，然后用await next()来调用下一个async函数。我们把每个async函数称为middleware，这些middleware可以组合起来，完成很多有用的功能。</blockquote>
 
 ——[koa入门——廖雪峰的官方网站](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001471087582981d6c0ea265bf241b59a04fa6f61d767f6000)
-</br>
+
+
+
 例如利用三个middleware组合起来完成一个处理链：
 
 ![图3](http://upload-images.jianshu.io/upload_images/5531033-2a358b0125a932fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
